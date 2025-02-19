@@ -32,8 +32,3 @@ def test_count_the_days_alt():
     assert count_the_days_alt("2019-01-16") == 16  # 16
     assert count_the_days_alt("2400-12-30") == 365
     assert count_the_days_alt("2026-03-16") == 75  # 31+28+16 = 75
-
-
-# dateValue = "2026-03-16"  # leap year test date - Expected value is 31+29+16 = 76
-# dateValue = "2019-01-16" # non leap year year/100 = Expected value is 16
-# dateValue = "2400-12-30" # leap year divided by 400 = 0 Expected value is 31+29+31+30+31+30+31+31+30+31+30+30 = 365
