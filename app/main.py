@@ -1,5 +1,11 @@
 from datetime import datetime
 
+"""
+This function is a very simple approach to calculate the 
+the number of days using a delta between two dates and utilizing the
+datetime python standard library functions  to calculate the delta.
+"""
+
 
 def count_the_days(dateValue):
     date_format = "%m/%d/%Y"
@@ -14,10 +20,22 @@ def count_the_days(dateValue):
     return delta.days + 1
 
 
+"""
+Alternative to calculating the number of days
+uses a dictionary to store the number of days in each month
+Note that the list of months is limited to the month specified and since
+we use a range function the value of the month is one less than the month specified.
+We sum the days for in the stored dictionary and then simply add the day value that 
+was passed into the function
+
+"""
+
+
 def count_the_days_alt(dateValue):
     year = int(dateValue.split("-")[0])
     month = int(dateValue.split("-")[1])
     day = int(dateValue.split("-")[2])
+
     days: int = 0
 
     months = list(range(1, month))

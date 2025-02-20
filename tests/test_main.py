@@ -16,6 +16,7 @@ def test_count_the_days():
     assert count_the_days("12/30/2400") == 365
     assert count_the_days("03/16/2026") == 75  # 31+28+16 = 75
     assert count_the_days("01/16/2019") == 16
+    assert count_the_days("01/01/2025") == 1
 
 
 """
@@ -32,3 +33,4 @@ def test_count_the_days_alt():
     assert count_the_days_alt("2019-01-16") == 16  # 16
     assert count_the_days_alt("2400-12-30") == 365
     assert count_the_days_alt("2026-03-16") == 75  # 31+28+16 = 75
+    assert count_the_days_alt("2025-01-01") == 1
