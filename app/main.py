@@ -49,6 +49,12 @@ def count_the_days_alt(dateValue):
     return days
 
 
+"""
+Found this logic documented somewhere on the inter-webs
+Modified to suit the purpose of this example.
+"""
+
+
 def is_leap_year(year: int) -> int:
     if year % 4 == 0:
         if year % 100 == 0:
@@ -60,6 +66,3 @@ def is_leap_year(year: int) -> int:
             return 29
     else:
         return 28
-
-
-print(count_the_days_alt("2025-12-28"))
